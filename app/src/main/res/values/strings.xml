@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Exercise1</string>
+    <string name="welcome">Selamat Datang</string>
+    <string name="nama">Username</string>
+    <string name="name">Nama</string>
+    <string name="email">Email</string>
+    <string name="iNama">Masukkan Nama</string>
+    <string name="dftremail">Masukkan Email</string>
+    <string name="pwd">Password</string>
+    <string name="dftrpass">Masukkan Password</string>
+    <string name="btnsignin">Sign In</string>
+    <string name="us">Irsyad</string>
+    <string name="mk">Matkul</string>
+    <string name="waktu">Deadline</string>
+    <string name="matkul">Masukkan Mata Kuliah</string>
+    <string name="dl">Masukkan Deadline</string>
+    <string name="submit">Submit</string>
+    <string name="logout">Logout</string>
+    <string name="tgs">Tugas Harian</string>
+    <string name="rgst">Register</string>
+</resources>

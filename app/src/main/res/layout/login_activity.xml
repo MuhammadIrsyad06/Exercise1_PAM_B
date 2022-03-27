@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="171dp"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.207"
+        app:srcCompat="@drawable/lgn" />
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="315dp"
+        android:layout_height="65dp"
+        android:text="@string/welcome"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18pt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403" />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="280dp"
+        android:text="Username"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintEnd_toEndOf="@+id/hello"
+        app:layout_constraintTop_toBottomOf="@+id/hello" />
+
+    <TextView
+        android:id="@+id/password1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="268dp"
+        android:text="@string/pwd"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintEnd_toEndOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/dftremail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/hello"
+        app:layout_constraintStart_toStartOf="@+id/hello"
+        app:layout_constraintTop_toBottomOf="@+id/nama" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="305dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/dftrpass"
+        android:inputType="textPersonName|textPassword|textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/username"
+        app:layout_constraintStart_toStartOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/password1" />
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:shadowColor="@color/black"
+        android:text="@string/btnsignin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.132" />
+
+    <Button
+        android:id="@+id/btRgst"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rgst"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintEnd_toEndOf="@+id/btLogin"
+        app:layout_constraintStart_toStartOf="@+id/btLogin"
+        app:layout_constraintTop_toBottomOf="@+id/btLogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
